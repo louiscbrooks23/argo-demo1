@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tikv-operator
+  namespace: tikv-operator
+spec:
+  project: default
+  source:
+    chart: pingcap/tikv-operator
+    repoURL: https://charts.pingcap.org/
+    targetRevision: 0.1.0
+    helm:
+      releaseName: tikv-operator
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: tikv-operator
