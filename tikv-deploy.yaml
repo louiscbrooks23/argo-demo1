@@ -3,7 +3,7 @@ kind: TikvCluster
 metadata:
   name: basic
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   version: v4.0.0
   pd:
