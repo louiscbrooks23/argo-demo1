@@ -3,6 +3,8 @@ kind: TidbCluster
 metadata:
   name: basic
   namespace:tikv
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   version: v7.1.0
   timezone: UTC
