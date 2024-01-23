@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: firstPod
+  name: firstpod
   namespace: default
   annotations:
     argocd.argoproj.io/sync-wave: "1"
