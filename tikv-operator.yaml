@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: tikv-operator
   namespace: tikv-operator
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   project: default
   source:
