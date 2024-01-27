@@ -5,7 +5,7 @@ metadata:
 spec:
  destination:
    name: argo-prod
-   namespace: ''
+   namespace: 'argo-demo1'
    server: ''
  source:
    path: manifests
